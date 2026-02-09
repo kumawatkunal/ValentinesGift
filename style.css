@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc3a0 0%, #ffafbd 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Video Background */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* The Glassmorphism Card */
+.container {
+    background: rgba(255, 255, 255, 0.6);
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+/* Page Hiding/Showing Logic */
+.page {
+    display: none;
+    animation: fadeIn 0.8s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Typography */
+h1 {
+    font-family: 'Cinzel', serif;
+    color: #ff4d6d;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Cute Image styling */
+img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+
+/* Photo Frame Container */
+.photo-frame {
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+}
+
+/* The Tricky Buttons Container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; /* Essential for the moving button */
+}
+
+/* The 'No' Button specific style */
+.no-btn {
+    background: #fff;
+    color: #ff4d6d;
+    border: 2px solid #ff4d6d;
+    position: relative; 
+}
+
+/* Landscape Container for Page 3 */
+.landscape-container {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.landscape-container h1 {
+    margin-bottom: 15px;
+}
+
+.landscape-container p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* List Styling */
+.reasons {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.reasons li {
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: #d63384;
+    font-weight: bold;
+}

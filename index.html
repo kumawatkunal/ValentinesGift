@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Darlinnnnn Shreyaaa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <video autoplay muted loop class="bg-video">
+        <source src="love.mp4" type="video/mp4">
+    </video>
+
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="container">
+        
+        <div class="page active" id="page1">
+            <h1>For the most gorgeous woman 🌸</h1>
+            <p>Ive made something special for you...</p>
+            <button class="btn" onclick="nextPage('page2'); playMusic()">click here <3</button>
+        </div>
+
+        <div class="page" id="page2">
+            <h1>Remember this? </h1>
+            <div class="photo-frame">
+                <img src="Kush Forever.png" alt="Cute Gif">
+            </div>
+            <p>with you every moment feels like worth living 💗🫂</p>
+            <button class="btn" onclick="nextPage('page3')">Next 💗</button>
+        </div>
+
+        <div class="page" id="page3">
+            <div class="landscape-container">
+                <h1>They asked me WHY HER ?</h1>
+                <p>
+They asked me why do you love her so much, What's so special about her, why do you let her be the only person to make you laugh and the only person to make you cry As soon as she texts you, you leap to get your phone. What's so great about her they asked, I sat down, I stayed quiet for a few minutes and replied, when you know she's the one you just know there doesn't have to be a particular reason. You don't need a reason to love someone, your heart chooses her before your mind even gets to say ,it's something that you can't even control, It takes over you just like that When you least expect it, it hits you right in the heart. You feel alive, you feel better and nobody will ever understand why you love her, because it's something that was never meant to be understood by strangers, only understood by the two hearts those are together
+"She's the kind of girl i never see coming in my simple life and after two weeks i was feeling that I love her, she's my world. She told me I wants a hug and I knew I was in trouble, spent every night fucked up in the mystery that what's in her mind, what's she thinking? What does she want? is this enough for her! Am I enough for here ,there are some people you can read, but she's a novel written in another language. Love is never easily understood. Our love was unexpected, the kind you only read about One second i was flying on a plane, the next we were falling in love it gives me hope that this a good place, She gives me hope that I am good, I look into her eyes and I'm in her soul, completely transfixed. I swear no one has ever felt safer in this world than her. Her soul intertwined with mine and I'm sure we can take on the world. Lying over my bed and texting to her I feel her magic, the kind you can only find in is girl who finds humor in everything. She kisses me and sprout her wings that takes me to a place where we're Together forever, Sometimes she laughs and I swear it's the cure for any disease, it healed me it healed me from my worst past to the beautiful future. She feels like home. No better than that she feels like where I belong, where I was always
+supposed to be I wasn't looking for anyone she showed me my forever, She's the kind of art that can do that, steal your heart and change your life. You, you're hers! She's the girl who looks down when you stare at her for a little too long and turns away if you catch her looking. She's the girl whose hairs are the most beautiful one in this world, and whose smile isn't always real cus her smile is just surreal and unreal, She's the girl who's just the most beautiful girl already in this universe, she's the girl who laughs at all of my jokes-funny or not the one who will love you with every ounce of love present in her. She's the girl who will watch stars with you at night, or the kind of girl who's just everything to you,
+You're the kind of girl who stole my heart away. 💗✨</p>
+            </div>
+            <button class="btn" onclick="nextPage('page4')">Next</button>
+        </div>
+
+        <div class="page" id="page4">
+            <h1>Why its always you over anyone 😭 ✨</h1>
+            <ul class="reasons">
+                <li>Only you are the one who loves me truly</li>
+                <li>You have the kindest heart ive ever met</li>
+                <li>You makes me feel like im the luckiest person alive</li>
+            </ul>
+            <button class="btn" onclick="nextPage('page5')">One last thing...</button>
+        </div>
+
+        <div class="page" id="page5">
+            <h1>Will you be my Valentine Shreyaaaaa ? 🌹</h1>
+            <div class="buttons">
+                <button class="btn yes-btn" onclick="nextPage('page6')">YES! 🥹</button>
+                <button class="btn no-btn" id="noBtn" onmouseover="moveButton()">NO 😭</button>
+            </div>
+        </div>
+
+        <div class="page" id="page6">
+            <h1>YAYYY! 😭💗</h1>
+            <p>I knew you'd say yes! I promise I'll keep you the happiest person in the world!</p>
+            <img src="love.gif" alt="love">
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
